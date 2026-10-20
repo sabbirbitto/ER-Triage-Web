@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ER Triage System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h1>🏥 Hospital ER Patient Triage System</h1>
+
+            <p>
+                Emergency Room Patient Priority Management
+            </p>
+
+        </div>
+
+
+        <!-- Register Patient -->
+        <div class="card">
+
+            <h2>Register New Patient</h2>
+
+            <div class="form-grid">
+
+                <input
+                    id="patientID"
+                    type="text"
+                    placeholder="Patient ID"
+                >
+
+                <input
+                    id="patientName"
+                    type="text"
+                    placeholder="Patient Name"
+                >
+
+                <input
+                    id="age"
+                    type="number"
+                    placeholder="Age"
+                >
+
+                <input
+                    id="severity"
+                    type="number"
+                    placeholder="Severity (1-5)"
+                >
+
+                <input
+                    id="heartRate"
+                    type="number"
+                    placeholder="Heart Rate (bpm)"
+                >
+
+                <input
+                    id="bloodPressure"
+                    type="number"
+                    placeholder="Blood Pressure (mmHg)"
+                >
+
+                <input
+                    id="respiratoryRate"
+                    type="number"
+                    placeholder="Respiratory Rate"
+                >
+
+            </div>
+
+            <button id="registerButton">
+                Register Patient
+            </button>
+
+        </div>
+
+
+        <!-- Search Patient -->
+        <div class="card">
+
+            <h2>Search Patient</h2>
+
+            <div class="search-area">
+
+                <input
+                    id="searchPatientID"
+                    type="text"
+                    placeholder="Enter Patient ID"
+                >
+
+                <button id="searchButton">
+                    Search Patient
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Update Patient -->
+        <div class="card">
+
+            <h2>Update Patient Vitals</h2>
+
+            <div class="form-grid">
+
+                <input
+                    id="updatePatientID"
+                    type="text"
+                    placeholder="Patient ID"
+                >
+
+                <input
+                    id="updateHeartRate"
+                    type="number"
+                    placeholder="New Heart Rate (bpm)"
+                >
+
+                <input
+                    id="updateBloodPressure"
+                    type="number"
+                    placeholder="New Blood Pressure (mmHg)"
+                >
+
+                <input
+                    id="updateRespiratoryRate"
+                    type="number"
+                    placeholder="New Respiratory Rate"
+                >
+
+            </div>
+
+            <button id="updateButton">
+                Update Patient
+            </button>
+
+        </div>
+
+
+        <!-- Queue -->
+        <div class="card">
+
+            <h2>Current ER Waiting Queue</h2>
+
+            <div class="action-buttons">
+
+                <button>
+                    Refresh Queue
+                </button>
+
+                <button>
+                    Dispatch Highest Priority Patient
+                </button>
+
+            </div>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Patient ID</th>
+
+                        <th>Name</th>
+
+                        <th>Age</th>
+
+                        <th>Severity</th>
+
+                        <th>Heart Rate</th>
+
+                        <th>Blood Pressure</th>
+
+                        <th>Score</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
